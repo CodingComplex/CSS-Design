@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card span {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 250px;
+    display: block;
+    background: black;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.75;
+    transform: rotate(calc(90deg * var(--i)));
+    transform-origin: 125px 0;
+}
+
+.card span:nth-child(1) {
+    background: cyan;
+}
+.card span:nth-child(2) {
+    background: rgb(201, 28, 253);
+}
+.card span:nth-child(3) {
+    background: yellow;
+}
+.card span:nth-child(4) {
+    background: green;
+}
+
+.card .glass {
+    position: absolute;
+    width: 450px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    border: 1px solid white;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.card .glass::before {
+    content: '';
+    position: absolute;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(345deg);
+}
+
+.card .glass h3 {
+    padding: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    color: #333;
+    text-align: end;
+}
+
+.card .glass h3 i {
+    font-weight: 300;
+    font-size: 0.75em;
+}
