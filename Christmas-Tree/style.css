@@ -1,0 +1,59 @@
+body {
+    background: linear-gradient(#00144b, #000000);
+    margin: 0;
+    height: 130vh;
+    overflow: hidden;
+}
+
+.tree {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 400px;
+    width: 300px;
+    background: linear-gradient(to top, #553205, #067c2d, #0a8b35, #31da61, hsl(133, 99%, 68%));
+    clip-path: polygon(50% 0, 70% 15%, 55% 10%, 85% 40%, 60% 25%, 90% 60%, 65% 45%, 100% 87%, 57% 80%, 57% 100%,
+    43% 100%, 43% 80%, 0 87%, 35% 45%, 10% 60%, 40% 25%, 15% 40%, 45% 10%, 30% 15%);
+    transform: rotateY(calc(21deg * var(--t)));
+}
+
+.snow {
+    width: 9px;
+    height: 9px;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: -10vh;
+    filter: blur(1px);
+    left: calc(10vw * var(--s));
+    animation: snow calc(1s * var(--s)) linear infinite;
+    animation-delay: -35s;
+}
+
+@keyframes snow {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(0, 110vh, 0);
+    }
+}
+
+.star {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background-color: #ffff00;
+    width: 65px;
+    height: 65px;
+    margin: auto;
+}
+
+.star1 {
+    position: absolute;
+    bottom: 390px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    filter: drop-shadow(0 0 16px rgb(247, 195, 55));
+}
