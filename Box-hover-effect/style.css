@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(9, 9, 31);
+}
+
+.container {
+  position: relative;
+  left: 25%;
+  top: 50%;
+  width: 1200px;
+  height: 300px;
+  margin: 240px auto;
+}
+
+.container .box {
+  position: relative;
+  width: calc(400px - 30px);
+  height: calc(300px - 30px);
+  background: rgba(14, 14, 14, 0.993);
+  float: left;
+  margin: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.container .box .icon {
+  position: absolute;
+  top: 85px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: grey;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.container .box:hover .icon {
+  top: 20px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.container .box .icon .fas {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.container .box:hover .icon .fas {
+  font-size: 80px;
+}
+
+.container .box .content {
+  position: absolute;
+  top: 100%;
+  height: calc(100% - 100px);
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  font-family: sans-serif;
+}
+
+.container .box:hover .content {
+  top: 100px;
+  opacity: 1;
+}
+
+.container .box:hover .content h4 {
+  margin: 0 0 10px;
+  padding: 0;
+  color: rgb(0, 77, 139);
+  font-size: 28px;
+}
+
+.container .box .content p {
+  font-family: sans-serif;
+  margin: 0 0 5px;
+  padding: 0;
+  color: rgb(0, 77, 139);
+}
