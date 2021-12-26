@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(32, 32, 32);
+}
+
+.container {
+    position: relative;
+    margin: 50px;
+}
+
+.container .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.container .text h2 {
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.container .text h5 {
+    font-size: 18px;
+    display: block;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle .points {
+    width: 3px;
+    height: 15px;
+    background: #0007;
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(calc(var(--i)*var(--rot))) translateY(-100px);
+}
+
+.points.marked {
+    animation: progress 0.05s linear forwards;
+    animation-delay: calc(var(--i)*0.06s);
+}
+
+@keyframes progress {
+    0% {
+        background: #0007;
+        box-shadow: none;
+    }
+    100% {
+        background: var(--bgColor);
+        box-shadow: 0 0 10px var(--bgColor);
+    }
+}
