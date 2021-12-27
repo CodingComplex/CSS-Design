@@ -1,0 +1,74 @@
+body {
+  margin: 0px;
+  font-family: sans-serif;
+  text-align: center;
+  background: rgb(19, 19, 19);
+}
+
+.container {
+  color: grey;
+  text-transform: uppercase;
+  font-size: 37px;
+  font-weight: bold;
+  padding-top: 200px;
+  position: fixed;
+  width: 100%;
+  bottom: 45%;
+  display: block;
+}
+
+.next {
+  height: 50px;
+  overflow: hidden;
+}
+
+.next .box .content {
+  color: #fff;
+  padding: 2px 10px;
+  height: 40px;
+  margin-bottom: 45px;
+  display: inline-block;
+}
+
+.next .box:first-child {
+  animation: scroll 5s linear infinite;
+}
+
+.next .box .content {
+  background: #42C58A;
+}
+
+.next .box:first-child .content {
+  background: #00f829;
+}
+
+.next .box:last-child .content {
+  background: #eb0533;
+}
+
+@keyframes scroll {
+  0% {
+    margin-top: -270px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
