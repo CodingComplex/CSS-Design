@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(61, 61, 61);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+}
+
+.button {
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    background: #0096fa;
+    width: 170px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.button:hover, .button:focus, .button:active {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
