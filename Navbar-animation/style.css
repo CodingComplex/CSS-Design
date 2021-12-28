@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(26, 26, 26);
+}
+
+.container {
+    font-family: sans-serif;
+    background: rgb(5, 26, 219);
+    margin: 0 auto;
+    padding: 3em 3em;
+    text-align: center;
+}
+
+.container a {
+    position: relative;
+    color: white;
+    font: 20px sans-serif;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    text-decoration: none;
+    z-index: 0;
+    cursor: pointer;
+}
+
+div a:before, div a:after {
+    position: absolute;
+    content: '';
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: white;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+div a:before {
+    top: 0px;
+    transform: translateY(10px);
+}
+
+div a:after {
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+div a:hover:before, div a:hover:after {
+    opacity: 1;
+    transform: translateY(0px);
+}
