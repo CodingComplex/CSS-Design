@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Coding Complex</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="display">
+      <div id="time"></div>
+    </div>
+    <span></span>
+    <span></span>
+  </div>
+  <script>
+    setInterval(()=>{
+      const time = document.querySelector(".display #time");
+      let date = new Date();
+      let hr = date.getHours();
+      let min = date.getMinutes();
+      let sec = date.getSeconds();
+      let am_pm = "AM";
+      if (hr > 12) {
+        am_pm = "PM";
+        hr = hr - 12;
+      }
+      if(sec < 10){
+        sec = "0" + sec;
+      }
+      if(min < 10){
+        min = "0" + min;
+      }
+      if(hr < 10){
+        hr = "0" + hr;
+      }
+      time.textContent = hr + ":" + min + ":" + sec +" "+ am_pm;
+    });
+  </script>
+</body>
+</html>
