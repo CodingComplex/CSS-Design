@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: rgb(14, 14, 14);
+}
+
+a {
+    position: relative;
+    width: 200px;
+    height: 65px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 60px;
+    letter-spacing: 2px;
+    margin: 20px;
+    transform: 0.5s;
+}
+
+a:hover {
+    background: #730bec url(pixel-img.webp);
+    transition-delay: 0.8s;
+    background-size: 180px;
+    animation: anim 0.8s steps(8) forwards;
+}
+
+@keyframes anim {
+    0% {
+        background-position-y: 0;
+    }
+    100% {
+        background-position-y: -480px;
+    }
+}
