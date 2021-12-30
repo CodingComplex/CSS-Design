@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(Firework-Image.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+h1 {
+    position: absolute;
+    top: 20%;
+	font-size:3.5em;
+    font-family: sans-serif;
+	letter-spacing: 15px;
+	color: #e71818;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	-webkit-box-reflect : below 1px linear-gradient(transparent , #0004);
+	line-height: 0.70em;
+	outline: none;
+	animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate{
+	0%,18%,20%,50%,60%,65%,80%,90%,95%{
+		color: #8a1b1b;
+		text-shadow: none;
+	}
+
+	18%,20%,30%,50%,60%,65%,80%,90%,95%,100%{
+		color: #fff;
+		text-shadow: 0 0 10px red,
+		            0 0 20px red,
+		            0 0 40px red,
+		            0 0 80px red,
+		            0 0 160px red;
+
+	}
+}
+
+h2 {
+    position: absolute;
+    top: 45%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 10em;
+    filter: blur(1px);
+    font-weight: 100;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1),
+                 0 0 20px rgba(255, 255, 255, 1),
+                 0 0 40px rgba(255, 255, 255, 1),
+                 0 0 80px rgba(255, 255, 255, 1),
+                 0 0 160px rgba(255, 255, 255, 1);
+}
