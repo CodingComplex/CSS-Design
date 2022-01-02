@@ -1,0 +1,124 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+	background: #202020;
+	overflow: hidden;
+}
+
+.switch {
+	position: relative;
+	margin: 20px 0;
+	width: 240px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.switch input {
+	opacity: 0;
+}
+
+.inspect {
+	position: absolute;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border-radius: 40px;
+	background: #0f0f0f;
+	box-shadow: 0 0 0 5px #0f0f0f;
+}
+
+.inspect::before {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	top: calc(50% - 4px);
+	left: -30px;
+	border-radius: 50%;
+	background: red;
+	box-shadow: 0 0 5px red,
+	            0 0 10px red,
+	            0 0 20px red;
+	transition: 0.4s;
+}
+
+.switch input:checked ~ .inspect::before {
+	background: #101010;
+	box-shadow: none;
+}
+
+.inspect::after {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	top: calc(50% - 4px);
+	right: -30px;
+	border-radius: 50%;
+	background: #101010;
+	box-shadow: none;
+	transition: 0.4s;
+}
+
+.switch input:checked ~ .inspect::after {
+	background: lime;
+	box-shadow: 0 0 5px lime,
+	            0 0 10px lime,
+	            0 0 20px lime;
+}
+
+.button {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 120px;
+	height: 80px;
+	border-radius: 40px;
+	background: #333333;
+	box-shadow: inset 0 -20px 15px #292929,
+	            inset 0 20px 15px #292929;
+	transition: 0.4s;
+}
+
+.button::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 52px;
+	height: 80px;
+	background: #252525;
+	border-top-left-radius: 80px;
+	border-bottom-left-radius: 80px;
+	filter: blur(3px);
+	box-shadow: inset -5px -5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.button::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 52px;
+	height: 80px;
+	filter: blur(3px);
+	background: #252525;
+	border-top-right-radius: 80px;
+	border-bottom-right-radius: 80px;
+	box-shadow: inset 5px -5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.switch input:checked ~ .button {
+left: 50%;
+}
