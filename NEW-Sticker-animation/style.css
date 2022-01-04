@@ -1,0 +1,40 @@
+body {
+    padding: 4em;
+    background: white;
+}
+
+.wrapper {
+    width: 200px;
+    margin: auto;
+    z-index: 1;
+}
+
+.text {
+    position: absolute;
+    color: rgb(245, 240, 230);
+    text-align: center;
+    font-family: 'Bree Serif', Couurier , monospaced;
+    font-size: 3.4em;
+    width: 200px;
+    pointer-events: none;
+    margin: 55px 0 0 2px;
+}
+
+.sticker {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/13034/sticker.png) top center no-repeat;
+    animation: spin 9s linear infinite;
+    animation-play-state: paused;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.sticker:hover {
+    animation-play-state: running;
+}
