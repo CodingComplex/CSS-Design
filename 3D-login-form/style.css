@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 300;
+  background: whitesmoke;
+}
+
+.login {
+  filter: blur(0.5px);
+  width: 430px;
+  height: 700px;
+  border-radius: 10px;
+  padding: 60px 35px 35px 35px;
+  background: radial-gradient(circle, #535353, #505050);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2),
+              0 5px 10px rgba(0, 0, 0, 0.2),
+              0 70px 50px rgba(0, 0, 0, 0.4),
+              30px 50px 50px rgba(0, 0, 0, 0.2),
+              -30px 50px 50px rgba(0, 0, 0, 0.2),
+              inset 20px 0px 60px rgba(0, 0, 0, 0.1),
+              inset -20px 0px 60px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  padding-top: 20px;
+  font-size: 70px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 100%;
+  padding: 100px 5px 30px 5px;
+}
+
+.container input {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  font-family: sans-serif;
+  padding: 10px 10px 10px 5px;
+  color: white;
+}
+
+.username, .password {
+  display: block;
+  margin-bottom: 30px;
+  border-bottom: 1px solid grey;
+}
+
+::placeholder {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 1;
+}
+
+button {
+  width: 100%;
+  height: 60px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 5px;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  letter-spacing: 1.5px;
+  background: radial-gradient(circle, #24cfaa, #28bb9c);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background: radial-gradient(circle, #2fdbb5, #32c9a0);
+}
+
+button:active {
+  background: radial-gradient(circle, #1da881, #229c85);
+}
+
+.container svg {
+  height: 22px;
+  margin-bottom: -3px;
+  margin-right: 10px;
+}
+
+.forgot-pass {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.forgot-pass a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
