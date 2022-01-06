@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    font-family: sans-serif;
+    background: cyan;
+}
+
+div {
+    font-size: 8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: transparent;
+    transform: translate(-50%, -50%) skewY(-6deg);
+    transform-origin: bottom left;
+    text-shadow: 1px -1px 10px rgba(255, 255, 255, 0.5),
+                 0px -1px 10px rgba(255, 255, 255, 0.5),
+                 -1px -1px 10px rgba(255, 255, 255, 0.5),
+                 -2px -4px 2px white,
+                 -3px -4px 2px white,
+                 -5px -5px 3px white;
+}
+
+div:before {
+    content: "Coding";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: transparent;
+    transform: skewX(30deg);
+    transform-origin: bottom left;
+    z-index: -1;
+    text-shadow: 15px 0 20px rgba(0, 0, 0, 0.3),
+                 15px 0 25px rgba(0, 0, 0, 0.3),
+                 15px 0 30px rgba(0, 0, 0, 0.3),
+                 15px 0 45px black;
+}
