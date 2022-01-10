@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: darkblue;
+}
+
+.counter {
+    display: flex;
+    width: 350px;
+    height: 200px;
+    line-height: 200px;
+}
+
+.counter .box {
+    margin: 0 5px;
+    border-radius: 5px;
+    width: 50%;
+    height: 100%;
+    background: grey;
+    font-size: 12em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    border: 5px solid white;
+    overflow: hidden;
+}
+
+.box::after {
+    position: relative;
+    content: '0 1 2 3 4 5 6 7 8 9';
+}
+
+.one::after {
+    animation: count 100s steps(10) infinite;
+}
+
+.two::after {
+    animation: count 10s steps(10) infinite;
+}
+
+@keyframes count {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -2000px;
+    }
+}
