@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    perspective: 500px;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: 800;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.text:hover {
+    animation: flip 1s linear;
+}
+
+@keyframes flip {
+    50% {
+        transform: rotateX(180deg);
+    }
+    to {
+        transform: rotateX(360deg);
+    }
+}
