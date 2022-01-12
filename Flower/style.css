@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-size: cover;
+  background-color: whitesmoke;
+}
+
+.container {
+  padding-top: 4%;
+}
+
+.flower {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.petal {
+  width: 150px;
+  height: 150px;
+  z-index: 10;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+}
+
+#petal1 {
+  transform-origin: bottom right;
+  border-radius: 0px 100px 0px 100px;
+  background: linear-gradient(160deg, #ee0979 0%, #ff6a00 100%);
+}
+
+#petal2 {
+  transform-origin: bottom left;
+  border-radius: 100px 0px 100px 0px;
+  background: linear-gradient(220deg, #ee0979 0%, #ff6a00 100%);
+}
+
+#petal3 {
+  transform-origin: top right;
+  border-radius: 100px 0px 100px 0px;
+  background: linear-gradient(30deg, #ee0979 0%, #ff6a00 100%);
+}
+
+#petal4 {
+  transform-origin: top left;
+  border-radius: 0px 100px 0px 100px;
+  background: linear-gradient(320deg, #ee0979 0%, #ff6a00 100%);
+}
+
+.seed {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: #ffef00;
+  z-index: 100;
+  margin-top: -298px;
+}
+
+.rod {
+  background: #0f9b0f;
+  margin-top: -130px;
+  width: 25px;
+  height: 310px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.pot {
+  background: #7a2828;
+  border-radius: 0px 0px 40px 40px;
+  width: 250px;
+  height: 100px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
