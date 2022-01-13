@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+}
+
+.text {
+    color: white;
+    text-transform: uppercase;
+    background: black;
+    font-size: 210px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.text::before {
+    content: 'css';
+    mix-blend-mode: difference;
+    position: absolute;
+    filter: blur(3px);
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: brightness(300%);
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.gradient {
+    background: linear-gradient(115deg, rgba(10, 227, 250, 1) 5%, rgba(230, 150, 65, 1) 98%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    mix-blend-mode: multiply;
+}
+
+.border {
+    position: absolute;
+    background: radial-gradient(circle, white, black 35%) center / 25% 25%;
+    left: -100%;
+    top: -100%;
+    bottom: 0;
+    right: 0;
+    mix-blend-mode: color-dodge;
+    animation: border 2.4s linear infinite;
+}
+
+@keyframes border {
+    to {
+        transform: translate(50%, 50%);
+    }
+}
