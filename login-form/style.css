@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(20, 20, 20);
+    height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 450px;
+    margin: 130px auto;
+    position: relative;
+}
+
+.container .header {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    padding: 25px 0 30px 25px;
+    background: #da0a0a;
+    border-bottom: 1px solid #5a0e0e;
+    border-radius: 6px 6px 0 0;
+}
+
+.container form {
+    position: absolute;
+    background: white;
+    width: 100%;
+    padding: 50px 10px 0 30px;
+    box-sizing: border-box;
+    border: 2px solid #8d1010;
+    border-radius: 0 0 6px 6px;
+}
+
+form input {
+    height: 50px;
+    width: 90%;
+    padding: 0 10px;
+    border-radius: 3px;
+    border: 1px solid silver;
+    font-size: 18px;
+    outline: none;
+}
+
+form input[type="password"] {
+    margin-top: 20px;
+}
+
+form i {
+    position: absolute;
+    font-size: 25px;
+    color: grey;
+    margin: 15px 0 0 -45px;
+}
+
+i.fa-lock {
+    margin-top: 35px;
+}
+
+form input[type="submit"] {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 130px;
+    height: 45px;
+    color: white;
+    cursor: pointer;
+    line-height: 45px;
+    border-radius: 45px;
+    border-radius: 5px;
+    background: #ff0000;
+}
+
+form a {
+    letter-spacing: 0.3px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    color: #cf1717;
+    padding: 0 0 0 20px;
+}
