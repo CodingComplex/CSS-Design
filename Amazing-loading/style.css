@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --border-width: 12px;
+    --border-color: white;
+}
+
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(8, 8, 8);
+}
+
+.load {
+    animation: load 2s linear infinite;
+}
+
+@keyframes load {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.type {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 55px;
+    width: 55px;
+}
+
+.one {
+    top: -60px;
+    left: -60px;
+    border-radius: 100% 0 0 0;
+    border-top: 12px solid red;
+    border-left: 12px solid blue;
+    animation: first 1s linear 1s alternate infinite;
+}
+
+@keyframes first {
+    to {
+        width: 25px;
+        height: 25px;
+        top: -20px;
+        left: -20px;
+    }
+}
+
+.two {
+    top: -60px;
+    border-radius: 0 100% 0 0;
+    border-top: 12px solid red;
+    border-right: 12px solid blue;
+    animation: second 1s linear alternate infinite;
+}
+
+@keyframes second {
+    to {
+        width: 25px;
+        height: 25px;
+        top: -20px;
+    }
+}
+
+.three {
+    left: -60px;
+    border-radius: 0 0 0 100%;
+    border-bottom: 12px solid red;
+    border-left: 12px solid blue;
+    animation: third 1s linear alternate infinite;
+}
+
+@keyframes third {
+    to {
+        width: 25px;
+        height: 25px;
+        left: -20px;
+    }
+}
+
+.four {
+    top: 0;
+    left: 0;
+    border-radius: 0 0 100% 0;
+    border-bottom: 12px solid red;
+    border-right: 12px solid blue;
+    animation: fourth 1s linear 1s alternate infinite;
+}
+
+@keyframes fourth {
+    to {
+        width: 25px;
+        height: 25px;
+    }
+}
