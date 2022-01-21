@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(17, 17, 17);
+}
+
+.shape {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 220px;
+    height: 220px;
+    border: 3px solid cyan;
+    transition: 4s;
+}
+
+.container:hover .shape {
+    transform: rotate(calc(270deg - (5deg * var(--s))));
+}
