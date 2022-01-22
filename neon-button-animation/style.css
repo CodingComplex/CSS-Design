@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    position: relative;
+    text-align: center;
+    padding: 40px;
+    width: 250px;
+    color: rgb(255, 0, 200);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    border: 5px solid rgb(255, 0, 200);
+    letter-spacing: 5px;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: 1.2s;
+}
+
+button:hover {
+    box-shadow: 0 5px 50px 0 rgb(255, 0, 200) inset,
+                0 5px 50px 0 rgb(255, 0, 200),
+                0 5px 50px 0 rgb(255, 0, 200) inset,
+                0 5px 50px 0 rgb(255, 0, 200);
+
+    text-shadow: 0 0 5px rgb(255, 0, 200),
+                 0 0 5px rgb(255, 0, 200);
+}
