@@ -1,0 +1,37 @@
+* {
+	margin: 0;
+	padding: 0;
+	background-color: rgb(15, 15, 15);
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 55%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+}
+
+.cube {
+	position: absolute;
+	width: 33%;
+	height: 33%;
+	transform-origin: 0 0;
+}
+
+.top {
+	background: #e34d98;
+	transform: rotate(210deg) skew(-30deg) translate(-200px, -60px) scaleY(0.86);
+}
+
+.left {
+	background: #db357f;
+	transform: rotate(90deg) skewX(-30deg) scaleY(0.86) translate(68px, -131px);
+}
+
+.right {
+	background: #e85fa9;
+	transform: rotate(-30deg) skewX(-30deg) translate(130px, 172px) scaleY(0.86);
+}
