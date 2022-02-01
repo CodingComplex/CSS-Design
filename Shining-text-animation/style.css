@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(5, 0, 64);
+}
+
+body {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    width: 100vw;
+    height: 100vh;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+div {
+    background: rgba(255, 255, 255, 0);
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(
+        to right, rgba(0, 0, 0, 1) 45%,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(0, 0, 0, 1) 55%,
+        rgba(0, 0, 0, 1) 100%
+    );
+    -webkit-background-clip: text;
+    color: rgba(255, 255, 255, 0);
+    background-size: 200%;
+    animation: anim 2s infinite;
+}
+
+@keyframes anim {
+    0% {
+        background-position: -100%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
