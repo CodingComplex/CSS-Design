@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 100vh;
+  overflow: hidden;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  outline: none;
+  color: rgb(255, 115, 0);
+  font-size: 3.5em;
+  text-shadow: 0 0 20px rgb(223, 16, 58),
+               0 0 20px rgb(223, 16, 58),
+               0 0 10px rgb(223, 16, 58),
+               5px -10px 10px orange,
+               -5px -10px 10px yellow;
+  animation: anim 1s linear alternate infinite;
+}
+
+@keyframes anim {
+  0% {
+    text-shadow: 0 10px 20px rgb(223, 16, 58), 0 0 20px red,
+    0 0 10px orange,
+    0 0 10px darkorange,
+    -5px -5px 5px yellow,
+    10px -10px 10px yellow; 
+  }
+
+  25% {
+    text-shadow: 0 10px 20px rgb(223, 16, 58), 0 0 20px red,
+    0 0 20px orange,
+    -5px -5px 5px yellow,
+    5px -10px 10px yellow,
+    -5px -10px 10px yellow; 
+  }
+
+  50% {
+    text-shadow: 0 10px 20px rgb(223, 16, 58), 0 0 20px red,
+    0 0 10px orange,
+    0 0 10px darkorange,
+    -5px -5px 5px yellow,
+    10px -10px 10px yellow; 
+  }
+
+  75% {
+    text-shadow: 0 10px 20px rgb(223, 16, 58), 0 0 20px red,
+    0 0 20px orange,
+    -5px -5px 5px yellow,
+    5px -10px 10px yellow,
+    -5px -10px 10px yellow; 
+  }
+
+  100% {
+    text-shadow: 0 10px 20px rgb(223, 16, 58), 0 0 20px red,
+    0 0 10px orange,
+    0 0 10px darkorange,
+    -5px -5px 5px yellow,
+    10px -10px 10px yellow; 
+  }
+}
