@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    background-color: rgb(166, 201, 255);
+}
+
+button {
+    position: relative;
+    border: none;
+    outline: none;
+    padding: 1.25rem 2.5rem;
+    background-color: rgb(71, 71, 179);
+    color: white;
+    font-size: 1rem;
+    font-family: monospace;
+    border-radius: 0.5rem;
+    box-shadow: 0 18px 40px rgb(71, 71, 179);
+    overflow: hidden;
+    cursor: wait;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 150%;
+    background: repeating-linear-gradient(60deg,
+                transparent,
+                transparent 0.75rem,
+                hsl(231, 43%, 47%) 0.75rem,
+                hsl(231, 43%, 47%) 1.50rem);
+    animation: load 1.2s linear infinite;
+}
+
+span {
+    position: relative;
+}
+
+@keyframes load {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-1.75rem);
+    }
+}
