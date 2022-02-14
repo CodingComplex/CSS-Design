@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(17, 17, 17);
+}
+
+body {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+input {
+    font-family: sans-serif;
+    padding: 20px 20px;
+    border: 3px solid white;
+    color: white;
+    font-size: 28px;
+    text-indent: 15px;
+    border-radius: 10px;
+    outline: none;
+    background: none;
+    border: grey;
+    border-width: 1px;
+    letter-spacing: 3px;
+    transition: .3s;
+}
+
+input:focus {
+    padding: 25px 25px;
+    box-shadow: 0 0 15px rgb(225, 9, 245),
+                0 0 75px rgb(225, 9, 245);
+    border: 1px solid rgb(225, 9, 245);
+}
+
+input::placeholder {
+    color: grey;
+}
