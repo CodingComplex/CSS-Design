@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-between;
+    height: 50px;
+    width: 50px;
+}
+
+.container div {
+    height: 9px;
+    background: linear-gradient(to left, #2e3441 50%, red 50%);
+    background-size: 200% 100%;
+    background-position: 0 0;
+    -webkit-animation: exp alternate-reverse 2s infinite;
+    -moz-animation: exp alternate-reverse 2s infinite;
+    -o-animation: exp alternate-reverse 2s infinite;
+    animation: exp alternate-reverse 2s infinite;
+}
+
+@-moz-keyframes exp {
+    from {
+        background-position: 0 0;
+    }
+    25% {
+        background-position: -100%, 0;
+    }
+    50% {
+        background-position: -100%, 0;
+    }
+    75% {
+        background-position: -200% 0;
+    }
+    to {
+        background-position: -200% 0;
+    }
+}
+
+@-webkit-keyframes exp {
+    from {
+        background-position: 0 0;
+    }
+    25% {
+        background-position: -100%, 0;
+    }
+    50% {
+        background-position: -100%, 0;
+    }
+    75% {
+        background-position: -200% 0;
+    }
+    to {
+        background-position: -200% 0;
+    }
+}
+
+@-o-keyframes exp {
+    from {
+        background-position: 0 0;
+    }
+    25% {
+        background-position: -100%, 0;
+    }
+    50% {
+        background-position: -100%, 0;
+    }
+    75% {
+        background-position: -200% 0;
+    }
+    to {
+        background-position: -200% 0;
+    }
+}
+
+@keyframes exp {
+    from {
+        background-position: 0 0;
+    }
+    25% {
+        background-position: -100%, 0;
+    }
+    50% {
+        background-position: -100%, 0;
+    }
+    75% {
+        background-position: -200% 0;
+    }
+    to {
+        background-position: -200% 0;
+    }
+}
+
+.container div:nth-child(2) {
+    animation-delay: 100ms;
+}
+
+.container div:nth-child(3) {
+    animation-delay: 200ms;
+}
+
+.container div:nth-child(4) {
+    animation-delay: 300ms;
+}
+
+.container div:nth-child(5) {
+    animation-delay: 400ms;
+}
