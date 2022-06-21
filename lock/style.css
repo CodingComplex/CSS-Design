@@ -1,0 +1,85 @@
+body {
+    background-color: rgb(7, 7, 7);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lock {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 25px;
+    border: 10px solid red;
+    width: 250px;
+    height: 250px;
+    background-color: #161616;
+    transition: all .8s;
+    cursor: pointer;
+}
+
+.lock::before {
+    position: absolute;
+    content: 'Locked';
+    text-align: center;
+    color: red;
+    letter-spacing: 2px;
+    left: 46px;
+    top: 25px;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+
+.lock::after {
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 150px;
+    top: -125px;
+    left: 25px;
+    border-radius: 50%;
+    border-top: 25px solid red;
+    border-bottom: 25px solid red;
+    border-left: 25px solid red;
+    border-right: 25px solid red;
+    z-index: -1;
+    transform: all .8s;
+}
+
+.lock .key {
+    background-color: red;
+    margin: 50px auto 0;
+    width: 80px;
+    height: 40px;
+    border-radius: 75px;
+    transition: all .8s;
+}
+
+
+.unlock {
+    border: 10px solid lime;
+}
+
+.unlock::after {
+    border-top: 25px solid lime;
+    border-bottom: 25px solid lime;
+    border-left: 25px solid lime;
+    border-right: 25px solid transparent;
+}
+
+.unlock .key {
+    transform: rotate(-90deg);
+    background-color: lime;
+}
+
+.unlock::before {
+    content: "Access Granted";
+    font-family: sans-serif;
+    left: 5px;
+    top: 10px;
+    color: lime;
+}
