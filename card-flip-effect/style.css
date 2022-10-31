@@ -1,0 +1,73 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: #1f1f21;
+    margin: 4em;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    transform: translate(-50%, -50%);
+    perspective: 1000px;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: .7s;
+    transform-style: preserve-3d;
+}
+
+.container:hover .card {
+    transform: rotateY(180deg);
+}
+
+.face, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    --webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.face {
+    background: linear-gradient(-229deg, #0093e0, #80d0b8);
+}
+
+.back {
+    background: linear-gradient(-229deg, #0093e0, #80d0b8);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.back h1, .back p {
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    margin: 0;
+    text-shadow: 0 0 11px rgba(0, 0, 0, .6);
+}
+
+.back h1 {
+    font-size: 1.7rem;
+}
+
+.logo {
+    width: 130px;
+    height: 130px;
+    filter: drop-shadow(3px 3px 6px black);
+    opacity: .8;
+}
