@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(60, 39, 127);
+}
+
+div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #8b80f9;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: #8569e7 0 0 0 0;
+    }
+
+    100% {
+        box-shadow: #867cf300 0 0 0 22px;
+    }
+}
