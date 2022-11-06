@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(18, 2, 36);
+}
+
+a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #3e94e5;
+    color: #3e94e5;
+    border-radius: 4px;
+    padding: 1rem 2rem;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+
+}
+
+a:hover {
+    border: 4px solid #3e94e5;
+    box-shadow: #3e94e5 0px 0px 15px 0px inset,
+                #3e94e5 0px 0px 15px 0px;
+    border-radius: 16px;
+}
