@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(168, 206, 231);
+}
+
+.container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform: rotateX(-20deg) rotateY(30deg);
+    transform-style: preserve-3d;
+    animation: anim 6s linear infinite;
+}
+
+.pyramid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform-origin: bottom;
+    transform: rotateY(calc(90deg*var(--i))) translateZ(100px) rotateX(30deg);
+}
+
+.side:nth-child(even) {
+    background-color: yellow;
+    animation: even 3s 1s infinite;
+}
+
+.side:nth-child(odd) {
+    background-color: darkkhaki;
+    animation: odd 3s 1s infinite;
+}
+
+@keyframes anim {
+    0% {
+        transform: rotateX(-20deg) rotateY(30deg);
+    }
+    100% {
+        transform: rotateX(-20deg) rotateY(360deg);
+    }
+}
+
+@keyframes even {
+    0%, 100% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: darkkhaki;
+    }
+}
+
+@keyframes odd {
+    0%, 100% {
+        background-color: darkkhaki;
+    }
+    50% {
+        background-color: yellow;
+    }
+}
