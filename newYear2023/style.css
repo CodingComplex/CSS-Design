@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.wrapper {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container .newyear {
+    width: 490px;
+    height: 230px;
+}
+
+.wrapper .c2023 {
+    width: 400px;
+    height: 163px;
+}
